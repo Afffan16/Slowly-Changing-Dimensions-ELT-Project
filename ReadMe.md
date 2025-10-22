@@ -15,7 +15,7 @@ The architecture follows a decoupled, highly automated ELT pattern, enabling nea
 3. **Loading (Snowpipe)**: Snowpipe monitors the S3 bucket and ingests new files into the Snowflake staging table (`customer_raw`).
 4. **Transformation (Streams & Tasks)**: Snowflake Tasks execute Stored Procedures that read from Streams on the staging data, applying SCD logic to target dimension tables.
 
-![Data Flow Diagram](./architecture_diagram.png)
+<img src = "./architecture_diagram.png" alt="Architecture Diagram" width = "600">
 
 ## 🛠️ Technology Stack
 
